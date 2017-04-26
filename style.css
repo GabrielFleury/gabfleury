@@ -189,8 +189,17 @@ nav a:hover{
 
 
 
+/*///// Slider sizes /////*/
+.sliderBrutaliste ul li{
+  width: 600px;
+  height: 338px;
+}
+.sliderRox ul li{
+  width: 750px;
+  height: 422px;
+}
 
-/*///// slider stuff /////*/
+/*///// main slider stuff /////*/
 #slider, #slider2 {
   position: relative;
   overflow: hidden;
@@ -260,11 +269,6 @@ a.control_next, a.control_next2 {
   font-size: 18px;
 }
 
-/* Slider sizes */
-.sliderBrutaliste ul li{
-  width: 600px;
-  height: 338px;
-}
 
 
 
