@@ -56,6 +56,19 @@ header{
 	color: #e4e0e0;
 	background: #1a1b1f url("img/bg_header.png") center repeat-x;
 }
+header:after{
+    content: "";
+    display: block;
+    background: url("img/alien.png") no-repeat;
+    width: 81px;
+    height: 83px;
+    float: left;
+	margin-left: 10px;
+	margin-top: 40px;
+    animation-name: alienanim;
+    animation-duration: 2s;
+}
+
 
 h1{
 	float: left;
@@ -271,6 +284,12 @@ a.control_next, a.control_next2 {
 
 
 
+/* animation code */
+@keyframes alienanim {
+    from {margin-top: -85px; opacity: 0;}
+    to {margin-top: 40px; opacity: 1;}
+}
+
 
 
 
@@ -286,6 +305,18 @@ a.control_next, a.control_next2 {
 @media screen and (max-width: 1200px){
 	#content, #mainContent{
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 850px){
+	header:after{
+		content: "";
+		display: block;
+		background: url("img/alien.png") no-repeat;
+		width: 0px;
+		height: 0px;
+		float: left;
+		margin: 0px;
 	}
 }
 
