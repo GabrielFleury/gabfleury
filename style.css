@@ -10,6 +10,11 @@ a img{ border-style:none;}
     src: url("tw-cen-mt-condensed-medium.ttf");
 }
 
+#reel{
+	margin: 15px auto;
+    width: 50%;
+}
+
 .video-container {
 	position:relative;
 	padding-bottom:41.8%;
