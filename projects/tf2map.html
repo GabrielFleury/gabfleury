@@ -43,26 +43,36 @@
 
 
 <div id="content">
+
 	<h2>Team Fortress 2 map : cp_neighbor</h2>
 	<p>This is a <i>Team Fortress 2</i> custom map I made using the Hammer editor. Team Fortress 2 is a 2007 team-based first person shooter by Valve.<br />
 	In this game mode, BLU team has to capture point A and then B, while RED has to defend both under a time limit.<br />
 	Downloads are available on <a href="https://tf2maps.net/downloads/cp_neighbor.5711/" target="_blank">TF2maps.net</a>.
 	</p>
 	
-	<h3>About:</h3>
-	<p>Most TF2 maps are set in rural landscapes and don't feature any streets or skyscrapers. My personal goal with this project was to create a map with an interesting layout despite being based on a rural neighborhood, which usually has plenty of empty straight lines. <br />
-	To achieve this, most of the fights do not actually happen in the streets, and I am taking inspiration on cities built on mountains such as San Francisco and Montreal to justify streets having varying heights and odd turns. <br />
-	The idea is that both teams spawn in apartment buildings on opposite sides and the fights happen in the buildings that got built between them.
-	</p>
-	
-	<h3>My tasks:</h3>
-	<p>Level design, level art (solo project)
-	</p>
-	
-	<div class="video-container">
-		<iframe width="800" height="450" src="https://www.youtube.com/embed/DdQa3zKD-TI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	<div class="side-left" style="width:50%">
+		<h3>My tasks:</h3>
+		<p>Level design, level art (solo project)
+		</p>
+		
+		<h3>Goals:</h3>
+		<p>This was done for a contest with constraints, here is some of them and how I delt with them:</p>
+		<ul>
+		<li><b>City/Town:</b> A city context is full of empty straight lines, so I placed the areas of interest between the streets to keep the layout interesting.</li>
+		<li><b>Asymmetrical:</b> Needs to be balanced without relying on a mirrored layout, so I played with verticality to make the experiences different on each side.</li>
+		<li><b>Objective over a Deathpit:</b> The first point has holes on both sides that lead to a deathpit. Players need to watch their step if they want to back out to heal.</li>
+		<li><b>Cliffside:</b> The second point has an alternative path that leads next to a cliff. It is safer but a surprise attack can push players over the edge</li>
+		</ul>
 	</div>
-	<p style="text-align:center">Video following BLU team successfully attacking point A, then RED team defending point B.</p>
+	
+	<div class="side-right" style="width:50%">
+		<div class="video-container">
+			<iframe width="800" height="450" src="https://www.youtube.com/embed/DdQa3zKD-TI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<p style="text-align:center">Video following BLU team successfully attacking point A, <br />then RED team defending point B.</p>
+	</div>
+	
+	
 	
 	<br /><br />
 	<h2>Control point A</h2>
@@ -98,16 +108,48 @@
 		<li><img src="img/neighborB3_B4.jpg"/></li>
 	  </ul>  
 	</div>
-	
+		
 	
 	<br /><br />
-	<h2>Map layout sketch</h2>
+	<h2>Map layout iterations</h2>
 	
-	<p>My first version was much wider and had an extra path to the right of both points. After the first playtests in a full server, I've made the map more narrow, I altered the choke points to make them more viable to Red team, and some line of sights got shortened to make it harder for Snipers.<br />
-	I keep my sketch updated to keep track of my changes and to plan how to fix what is unbalanced during playtests. I keep logs of what changed and why.<br />
-	Here's how the map is currently layed out:
+	<p>As I playtested the map in a server, I made changes to make it much more narrow, I altered the choke points to make them more viable to Red team, and some line of sights got shortened to make it harder for Snipers.<br />
 	</p>
-	<div class="showcase_container"><img src="img/TF2_topdown_sketchA3.jpg" class="showcase" style="width:60%"/></div><br />
+	<div class="showcase_container"><img src="img/TF2_layouts.jpg" class="showcase" style="width:100%"/></div><br />
+	
+	<div class="bulletpoints_container">
+	<div class="side-left" style="width:25%">
+		<ul>
+			<li>Both teams spawn in apartment buildings on opposite sides and the fights happen in the buildings that got built between them.</li>
+			<li>Both respawn rooms move over once Capture Point A is captured.</li>
+			<li>Streets were too wide and too long.</li>
+			<li>Too many separate paths made players lose track of the goal.</li>
+		</ul>
+	</div>
+	<div class="side-left" style="width:25%">
+		<ul>
+			<li>Broke the linearity of the streets, because verticality wasn't enough to deter snipers from locking down those paths.</li>
+			<li>Spaced out the areas around Point A while narrowing down the options to reach it.</li>
+			<li>To make Point B a clearer point of interest one path on the right was removed and the surrounding area is larger.</li>
+			<li>Combined the respawn rooms because they were both too close to the points.</li>
+		</ul>
+	</div>
+	<div class="side-left" style="width:25%">
+		<ul>
+			<li>Completely removed all alternative paths on the right because they were too far to be useful and too disjointed to be instinctive.</li>
+			<li>Consolidated the paths close to A and B to create smaller choke points leading to the control points.</li>
+			<li>Buildings between A and B and now happening inside to help defensive classes close down Point B.</li>
+			<li>Added a 2nd respawn room for BLU to reward their first capture.</li>
+		</ul>
+	</div>
+	<div class="side-left" style="width:25%">
+		<ul>
+			<li>Moved RED respawn room to the left to lead players directly to Point B when they head out.</li>
+			<li>Reorganised the doorways around Point B to create multiple small opportunities for RED to defend, while also letting BLU take breaks between each choke point they successfully push trough.</li>
+		</ul>
+	</div>
+	</div>
+	
 	
 	
 </div>
