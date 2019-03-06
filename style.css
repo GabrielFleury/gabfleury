@@ -74,23 +74,34 @@ header:after{
 }
 
 
-h1{
+header h1{
 	float: left;
 	width: 211px;
 	height: 146px;
 	margin-top: 10px;
 	margin-left: 50px;
+	color: #008bbd;
+}
+h1{
+	clear: both;
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 3em;
+	font-family: Cen, Arial, sans-serif;
+	font-weight: normal;
+	color: #008bbd;
 }
 h2{
+	clear: both;
+	width: 100%;
 	margin-bottom: 10px;
 	font-size: 2.5em;
 	font-family: Cen, Arial, sans-serif;
 	font-weight: normal;
-	clear: both;
-	width: 100%;
 }
 h3{
-	font-size: 1.5em;
+	font-size: 1.6em;
+	font-family: Cen, Arial, sans-serif;
 }
 p{
 	margin-bottom: 10px;
@@ -214,6 +225,10 @@ nav a:hover{
 	margin-left: 16px;
 }
 
+.pinklist b{
+	color: #ca2acc;
+}
+
 
 .expand{
 	opacity: 0;
@@ -245,7 +260,7 @@ nav a:hover{
   overflow: hidden;
   margin: 20px auto 20px auto;
   border-radius: 4px;
-  
+  clear: both;
 }
 
 #slider ul, #slider2 ul {
@@ -380,9 +395,13 @@ a.control_next, a.control_next2 {
 	.side-left{
 		clear:both;
 		width:100% !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
 	}
 	.side-right{
 		clear:both;
 		width:100% !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
 	}
 }
