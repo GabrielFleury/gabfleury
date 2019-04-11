@@ -3,6 +3,7 @@
 * { margin:0; padding:0; }
 article, aside, figure, footer, header, hgroup, nav, section { display:block; }
 a img{ border-style:none;}
+li{list-style-position: inside;}
 
 /* Font */
 @font-face {
@@ -38,9 +39,9 @@ a img{ border-style:none;}
 }
 
 html{
-	background: #26282c;
+	background: #efefef;
 	font-family: Calibri, Arial, sans-serif;
-	color: #e4e0e0;
+	color: #000;
 }
 
 body{
