@@ -74,9 +74,36 @@
 		<p style="text-align:center">Video reflects the work of <a href="http://channelsurfers.tv">the entire team</a>.</p>
 	</div>
 		
+	<h2>Design Approach</h2>
+	
+	<div class="side-left" style="width:47%;">
+		<p>The game is centered around the act of <b>racing through TV channels</b>. From the players' view, they run through a short level, then start seeing a hint of platforms as noisy shapes, and finally they get swapped to a different channel. We wanted players to feel like the levels never end, as if the whole match was one continuous level.<br /><br />
+		In order to achieve this illusion, we needed a pipeline that makes it look like levels never end, while keeping complete control over the flow of levels. Since players score points whenever someone gets out of the screen, it was important for us to <b>create moments where players can distance themselves from the others</b>.<br /><br />
+		Our solution was to create a bank of "main" sections and a bank of "transition" sections. A channel always starts with a random transition, seamlessly continues into a main section, and ends with another random transition. This allowed us to create individual <b>levels that are built around one central idea</b>, then seamlessly turn into <b>transitions designed to be strong moments</b>.
+		</p>
+	</div>
+	
+	<div class="side-right" style="width:50%;">
+		<video width="587" height="330" style="width: 100%;" autoplay loop >
+		  <source src="webm/surfers_transition.webm" type="video/webm">
+		Your browser does not support the video tag.
+		</video>
+	</div>
 
 	<h2>Level design</h2>
 	
+	<p>I was in charge of the levels in the Sci-Fi channel. In each of my levels I picked a mechanic, introduced it safely, gave a risk/reward option to the players, and ended on a twist on the idea. 
+		<br /><br />
+		Here is one example of what I did using the laser mechanic throughout one level.
+	</p>
+	
+	<div style="text-align: center;">
+		<img src="img/CS_scifi_1.jpg" style="width:90%;"/><br />
+		<img src="img/CS_scifi_2.jpg" style="width:90%;"/><br />
+		<img src="img/CS_scifi_3.jpg" style="width:90%;"/>
+	</div>
+	
+	<!--
 	<div class="side-left" style="width:55%;">
 		<div id="slider" class="sliderBrutaliste">
 		  <a class="control_next">></a>
@@ -88,12 +115,10 @@
 			<li><img src="img/CS_level_3.jpg"/></li>
 		  </ul>  
 		</div>
-	</div>
+	</div>-->
 	
 	<div class="side-right" style="width:43%; margin-left:2%; margin-top:30px;">
-		<p>I was in charge of the levels in the Sci-Fi channel. In each of my 4 levels I picked a mechanic, introduced it safely, gave a risk/reward option to the players, and ended on a twist on the idea. 
-		<br /><br />
-		Here is one example of what I did using the laser mechanic throughout one level.
+		<p>
 		</p>
 	</div>
 	
@@ -102,7 +127,7 @@
 	
 	<h2>The theme</h2>
 	
-	<p>Given my experience as a technical artist, I took charge of a lot of the visual feedback and polish in the game. I made sure to design features that fit the game's themes and diegesis, but also were feasible given our limited time. <br /><br />
+	<p>Given my experience as a technical artist, I took charge of a lot of the visual feedback and polish in the game. I made sure to design features that <b>fit the game's themes and diegesis</b>, but also were <b>feasible given our limited time and resources</b>.<br /><br />
 	These small additions really helped the "game feel" and brought the project together. For example:<br />
 	  <ul>
 		<li>Random short videos right before the countdown to simulate someone surfing through channels</li>
