@@ -2,7 +2,7 @@ $(function() {
 	
 	$( ".showcase" ).each(function( index ) {
 		$url=$(this).attr("src");
-		$(this).after('<a href='+$url+' target="_blank" class="expand"><img src="../img/expand.png" /></a>');
+		$(this).after('<a href='+$url+' target="_blank" class="expand"><img src="../img/expand.gif" /></a>');
 	});
 	
 });

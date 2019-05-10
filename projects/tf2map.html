@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Gabriel Fleury">
 	<meta name="description" content="Portfolio of Gabriel Fleury">
-	<meta name="keywords" content="Gabriel Fleury,Gabfleury,portfolio,game design,game designer,character artist,NAD,Montreal">
+	<meta name="keywords" content="Gabriel Fleury,Gabfleury,portfolio,game designer,game design,level design,NAD,Montreal">
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="/icon.ico" >
 	<title>
@@ -12,9 +12,8 @@
 	</title>
 		
 	<link rel="stylesheet" type="text/css" href="../style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<script src="../script.js"></script>
-	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,6 +23,45 @@
 	  ga('create', 'UA-36359142-3', 'auto');
 	  ga('send', 'pageview');
 	</script>
+	
+	<link rel="stylesheet" href="../js/responsiveslides.css">
+	<script src="../js/responsiveslides.js"></script>
+	<script>
+		$(function () {
+		  $("#slider-TF2-A").responsiveSlides({
+			auto: false,
+			pager: true,
+			speed: 300
+		  });
+		  $("#slider-TF2-B").responsiveSlides({
+			auto: false,
+			pager: true,
+			speed: 300
+		  });
+		});
+	</script>
+  
+  <style>
+	.rslides1_s1 a::before{content: "A1";}
+	.rslides1_s2 a::before{content: "A2";}
+	.rslides1_s3 a::before{content: "A3";}
+	.rslides1_s4 a::before{content: "A4";}
+	.rslides1_s5 a::before{content: "A5";}
+	.rslides2_s1 a::before{content: "B1/B2";}
+	.rslides2_s2 a::before{content: "B3";}
+	.rslides2_s3 a::before{content: "B4";}
+		
+	.bulletpoints_container h3{
+		display: none;
+	}
+	
+	@media screen and (max-width: 800px){
+		.bulletpoints_container h3{
+			display: block;
+		}
+	}
+  </style>
+	
 </head>
 
 <body>
@@ -85,25 +123,23 @@
 	
 	<div class="side-right pinklist" style="width:63%; margin-left:2%;">
 	
-	<div id="slider" class="sliderBrutaliste">
-	  <a class="control_next">></a>
-	  <a class="control_prev"><</a>
-	  <ul>
-		<li><img src="img/TF2_A1.jpg"/></li>
-		<li><img src="img/TF2_A2.jpg"/></li>
-		<li><img src="img/TF2_A3.jpg"/></li>
-		<li><img src="img/TF2_A4.jpg"/></li>
-		<li><img src="img/TF2_A5.jpg"/></li>
-	  </ul>  
-	</div>
-	
-	<ul>
-		<li><b>A1</b>: The main street leads to more busy and cramped spaces on the left, or more open but distant spaces on the right.</li>
-		<li><b>A2</b>: The entrance to the factory that takes the entire left side of Point A. It has 3 different entrances but they all lead to to the safe Sentry spot in A3.</li>
-		<li><b>A3</b>: Ideal sentry location for RED team as it has height advantage on both Point A and the staircase on the left.</li>
-		<li><b>A4</b>: BLU Snipers and Soldiers can outrange the RED Sentry in A3 from this position, but it has a blind spot for defenders waiting around A5.</li>
-		<li><b>A5</b>: It has height advantage and is behind the point, making it the ideal location for RED teleporters, Medics, and even a second Sentry. However, attackers will be overwhelming if they manage to take over A3 and A4 simultaneously.</li>
-	</ul>
+		<div class="slide_container">
+			<ul class="rslides" id="slider-TF2-A">
+			  <li><a href="img/TF2_A1.jpg" target="_blank"><img src="img/TF2_A1.jpg" alt=""></a></li>
+			  <li><a href="img/TF2_A2.jpg" target="_blank"><img src="img/TF2_A2.jpg" alt=""></a></li>
+			  <li><a href="img/TF2_A3.jpg" target="_blank"><img src="img/TF2_A3.jpg" alt=""></a></li>
+			  <li><a href="img/TF2_A4.jpg" target="_blank"><img src="img/TF2_A4.jpg" alt=""></a></li>
+			  <li><a href="img/TF2_A5.jpg" target="_blank"><img src="img/TF2_A5.jpg" alt=""></a></li>
+			</ul>
+		</div>
+		
+		<ul>
+			<li><b>A1</b>: The main street leads to more busy and cramped spaces on the left, or more open but distant spaces on the right.</li>
+			<li><b>A2</b>: The entrance to the factory that takes the entire left side of Point A. It has 3 different entrances but they all lead to to the safe Sentry spot in A3.</li>
+			<li><b>A3</b>: Ideal sentry location for RED team as it has height advantage on both Point A and the staircase on the left.</li>
+			<li><b>A4</b>: BLU Snipers and Soldiers can outrange the RED Sentry in A3 from this position, but it has a blind spot for defenders waiting around A5.</li>
+			<li><b>A5</b>: It has height advantage and is behind the point, making it the ideal location for RED teleporters, Medics, and even a second Sentry. However, attackers will be overwhelming if they manage to take over A3 and A4 simultaneously.</li>
+		</ul>
 	</div>
 	
 	
@@ -119,22 +155,22 @@
 	</div>
 	
 	<div class="side-right pinklist" style="width:63%; margin-left:2%;">
-	<ul><br/>
-		<li><b>B1</b>: The entrance to the hotel is BLU's most direct approach to point B. However, there is a balconey directly above the main door. If BLU manages to control this area, they can have a good view of RED's backlines thanks to the window.</li>
-		<li><b>B2</b>: Once in control of the staircase, BLU can head out and confront RED directly. However this is where most eyes will be looking from the RED side, so a simultaneous attack from the right path is ideal.</li>
-		<li><b>B3</b>: Further away from the point and hidden from RED's sight. This makes it an ideal approach for BLU Scouts, Spies and Pyros. It is next to a deathpit, making it risky for both teams to hang around for too long.</li>
-		<li><b>B4</b>: RED needs to prevent any enemy from coming from the side, otherwise BLU will come in to break their defense from behind.</li>
-	</ul>
+		<ul>
+			<li><b>B1</b>: The entrance to the hotel is BLU's most direct approach to point B. However, there is a balconey directly above the main door. If BLU manages to control this area, they can have a good view of RED's backlines thanks to the window.</li>
+			<li><b>B2</b>: Once in control of the staircase, BLU can head out and confront RED directly. However this is where most eyes will be looking from the RED side, so a simultaneous attack from the right path is ideal.</li>
+			<li><b>B3</b>: Further away from the point and hidden from RED's sight. This makes it an ideal approach for BLU Scouts, Spies and Pyros. It is next to a deathpit, making it risky for both teams to hang around for too long.</li>
+			<li><b>B4</b>: RED needs to prevent any enemy from coming from the side, otherwise BLU will come in to break their defense from behind.</li>
+		</ul>
 	
-	<div id="slider2" class="sliderBrutaliste">
-	  <a class="control_next2">></a>
-	  <a class="control_prev2"><</a>
-	  <ul>
-		<li><img src="img/TF2_B1.jpg"/></li>
-		<li><img src="img/TF2_B3.jpg"/></li>
-		<li><img src="img/TF2_B4.jpg"/></li>
-	  </ul>  
-	</div>
+		<div class="slide_container">
+			<ul class="rslides" id="slider-TF2-B">
+			  <li><a href="img/TF2_B1.jpg" target="_blank"><img src="img/TF2_B1.jpg" alt=""></a></li>
+			  <li><a href="img/TF2_B4.jpg" target="_blank"><img src="img/TF2_B3.jpg" alt=""></a></li>
+			  <li><a href="img/TF2_B4.jpg" target="_blank"><img src="img/TF2_B4.jpg" alt=""></a></li>
+			</ul>
+		</div>
+	
+	
 	</div>
 		
 		
@@ -148,6 +184,7 @@
 	
 	<div class="bulletpoints_container">
 	<div class="side-left" style="width:25%">
+		<h3>Key Revision 1</h3>
 		<ul>
 			<li>Both teams spawn in apartment buildings on opposite sides and the fights happen in the buildings that got built between them.</li>
 			<li>Both respawn rooms move over once Capture Point A is captured.</li>
@@ -156,6 +193,7 @@
 		</ul>
 	</div>
 	<div class="side-left" style="width:25%">
+		<h3>Key Revision 2</h3>
 		<ul>
 			<li>Broke the linearity of the streets, because verticality wasn't enough to deter snipers from locking down those paths.</li>
 			<li>Spaced out the areas around Point A while narrowing down the options to reach it.</li>
@@ -164,6 +202,7 @@
 		</ul>
 	</div>
 	<div class="side-left" style="width:25%">
+		<h3>Key Revision 3</h3>
 		<ul>
 			<li>Completely removed all alternative paths on the right because they were too far to be useful and too disjointed to be instinctive.</li>
 			<li>Consolidated the paths close to A and B to create smaller choke points leading to the control points.</li>
@@ -172,6 +211,7 @@
 		</ul>
 	</div>
 	<div class="side-left" style="width:25%">
+		<h3>Key Revision 4</h3>
 		<ul>
 			<li>Moved RED respawn room to the left to lead players directly to Point B when they head out.</li>
 			<li>Reorganised the doorways around Point B to create multiple small opportunities for RED to defend, while also letting BLU take breaks between each choke point they successfully push trough.</li>

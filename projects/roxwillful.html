@@ -12,9 +12,8 @@
 	</title>
 		
 	<link rel="stylesheet" type="text/css" href="../style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<script src="../script.js"></script>
-	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,6 +23,35 @@
 	  ga('create', 'UA-36359142-3', 'auto');
 	  ga('send', 'pageview');
 	</script>
+	
+	<link rel="stylesheet" href="../js/responsiveslides.css">
+	<script src="../js/responsiveslides.js"></script>
+	<script>
+		$(function () {
+		  $("#slider-rox").responsiveSlides({
+			auto: true,
+			pager: true,
+			speed: 300
+		  });
+		});
+	</script>
+  
+  <style>
+	.rslides1_s1 a::before{content: "1";}
+	.rslides1_s2 a::before{content: "2";}
+	.rslides1_s3 a::before{content: "3";}
+	.rslides1_s4 a::before{content: "4";}
+		
+	.bulletpoints_container h3{
+		display: none;
+	}
+	
+	@media screen and (max-width: 800px){
+		.bulletpoints_container h3{
+			display: block;
+		}
+	}
+  </style>
 </head>
 
 <body>
@@ -56,9 +84,9 @@
 		
 		<h3>Goals:</h3>
 		<ul>
-		<li>Work with the writer to plan and tell a story through a non-linear series of events.</li>
-		<li>Create clever and intuitive puzzles that fit within the writer's overarching story.</li>
-		<li>Make sure the entire game was possible with our limited resources in modeling.</li>
+		<li>Work with the writer to plan and tell a story through non-linear series of events.</li>
+		<li>Create puzzles and interactions that fit within the overarching story.</li>
+		<li>Keep the player involved and surprised despite our limited resources.</li>
 		</ul>
 		
 	</div>
@@ -69,32 +97,30 @@
 		</div>
 		<p style="text-align:center">Video reflects the work of the entire team.</p>
 	</div>
-	
-	<div id="slider" class="sliderRox">
-	  <a class="control_next">></a>
-	  <a class="control_prev"><</a>
-	  <ul>
-		<li><img src="img/RoxWillful_Ingame1.png"/></li>
-		<li><img src="img/RoxWillful_Ingame2.png"/></li>
-		<li><img src="img/RoxWillful_Ingame3.png"/></li>
-		<li><img src="img/RoxWillful_Ingame4.png"/></li>
-	  </ul>  
+		
+	<div class="slide_container" style="width:60%">
+		<ul class="rslides" id="slider-rox">
+		  <li><a href="img/RoxWillful_Ingame1.png" target="_blank"><img src="img/RoxWillful_Ingame1.png" alt=""></a></li>
+		  <li><a href="img/RoxWillful_Ingame2.png" target="_blank"><img src="img/RoxWillful_Ingame2.png" alt=""></a></li>
+		  <li><a href="img/RoxWillful_Ingame3.png" target="_blank"><img src="img/RoxWillful_Ingame3.png" alt=""></a></li>
+		  <li><a href="img/RoxWillful_Ingame4.png" target="_blank"><img src="img/RoxWillful_Ingame4.png" alt=""></a></li>
+		</ul>
 	</div>
 		
 	<h2>Narrative design</h2>
 	<p>
-	We have an award winning writer on our team, but while he loves video games, his only experience in professional writing is from movies and television. I had regular meetings with him so we could come up with a story that made sense to play, with dialogue choices and some non-linearity. Below is the format I ended up making to keep everything organized. It is a flowchart containing all the possibilities of dialogue and interaction:
+	We had an award winning writer on our team to help us write dialogues and important plot points. His closest relevant experience was writing for movies, so I was in charge of figuring out a pipeline that would work for this type of game. I had regular meetings with him so we could come up with a story that made sense to play, with dialogue choices and some non-linearity.<br/> Below is the format I ended up making to keep everything organized. It is a flowchart visually representing all the possibilities of dialogues and interactions. Whenever I had to change elements of the scenario, it let me easily verify if everything still worked. I would then communicate the coordinates of the changes to the programmer and the writer.
 	</p>
 	
 	<div class="side-left" style="width:40%; margin-left:15%;">
-		<div class="showcase_container"><img src="img/SpaceDiner_Flowchart.jpg" style="width:75%" class="showcase" /></div><br />
+		<div class="showcase_container"><img src="img/RoxWillful_Flowchart.gif" style="width:75%" class="showcase" /></div>
 	</div>
 	
 	<div class="side-left" style="width:30%; margin-left:3%; margin-top: 50px;">
 	<ul>
 		<li>Black lines are mandatory player actions in order to clear the game. Grey lines are optional interactions.</li>
 		<li>The start of the game allows for exploration and most actions result in progression, but only one will lead to a series of linear events.</li>
-		<li>Other optional actions are used to guide the player on the right path or give lore on the world and characters which can be useful later.</li>
+		<li>Optional interactions are used to guide the player on the right path or builds the backstory of the world and characters, which helps immersion and can be useful later.</li>
 		<li>Towards the middle of the game, the critical path splits in 3 that can be accomplished in any order.</li>
 		<li>The ending wraps up all 3 paths into one ending, that differs depending on certain actions with the characters.</li>
 		<li>The writer wrote the full dialogue in a separate document for each possibility using the coordinates from this chart. Those coordinates are also used in the game's code to make it easier to update.</li>
@@ -103,11 +129,11 @@
 	
 	<h2>The minigames</h2>
 	<p>
-	I was in charge of coming up with minigames to spice up the gameplay between dialogue sections. They had to fit the theme and not be too difficult since they are mandatory. I designed and coded 3 minigames:</p>
+	I was also in charge of coming up with minigames to spice up the gameplay between dialogue sections. They had to fit the theme and not be too difficult since they are mandatory. I designed and scripted 3 minigames:</p>
 	
 	<ul style="margin-left: 10%">
 		<li>Tear apart a toaster/radio hybrid to get a specific piece.</li>
-		<li>Pinball machine where the ball itself is the object you need to retreive, by using glitching the Demo mode and breaking the machine.</li>
+		<li>Pinball machine where the ball itself is the object you need to retreive, by using the Free Play mode and breaking the machine.</li>
 		<li>Pipe machine where you have to purify a dirty liquid and then collect it.</li>
 	</ul> <br/ >
 	
